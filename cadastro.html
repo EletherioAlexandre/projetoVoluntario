@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Recrutamento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body background="imagem/carga.gif">
+    <div class="container">
+        <section>
+            <h1>Cadastro de Voluntários</h1>
+            <hr><br><br>
+
+            <form method="POST" action="cadastro.html">
+
+                <img class="imgcad" src="imagem/icon.jpg" alt="">
+                <br>
+                <br>
+                Nome<br>
+                <input style="text-align: center" type="text" name="nome" class="campo" maxlength="40" required><br>
+
+                Email<br>
+                <input style="text-align: center" type="email" name="email" class="campo" maxlength="50" required><br>
+
+                Senha<br>
+                <input style="text-align: center" type="password" name="senha" class="campo" maxlength="20" required><br>
+
+                CPF<br>
+                <input style="text-align: center" type="text" name="cpf" class="campo" minlength="11" maxlength="11" placeholder="999.999.999-99" required><br>
+                
+                Data de Nascimento<br>
+                <input style="text-align: center" style="text-align: center" type="date" name="data" class="campo" required><br>
+
+                Endereço<br>
+                <input style="text-align: center" type="text" name="endereco" class="campo" required><br>
+
+                Telefone<br>
+                <input style="text-align: center" type="tel" name="telefone" class="campo" minlength="8" maxlength="15" required placeholder="(DDD) 0000-0000">
+
+                Arma/Quadro/Serviço<hr><br>
+                <input type="radio" name="Arma/Quadro/Servico" value="infantaria" required>Infantaria<br>
+                <br>
+                <input type="radio" name="Arma/Quadro/Servico" value="cavalaria" required>Cavalaria<br>
+                <br>
+                <input type="radio" name="Arma/Quadro/Servico" value="artilharia" required>Artilharia<br>
+                <br>
+                <input type="radio" name="Arma/Quadro/Servico" value="engenharia" required>Engenharia<br>
+                <br>
+                <input type="radio" name="Arma/Quadro/Servico" value="comunicacoes" required>Comunicações<br>
+                <br>
+                <input type="radio" name="Arma/Quadro/Servico" value="matbel" required>Quadro de Material Bélico<br>
+                <br>
+                <input type="radio" name="Arma/Quadro/Servico" value="intendencia" required>Serviço de Intendência<br>
+                
+                <br>
+
+                <input type="submit" value="Enviar" class="btn" href="C:\Users\Eletherio\Desktop\Projeto_Voluntarios_Guerra\cadastro.html">
+                <input type="reset" value="Limpar" class="btn">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
