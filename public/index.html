@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Recrutamento</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body background="./imagem/carga.gif">
+    <div class="container">
+        <section>
+            <h1>Cadastro de Voluntários</h1>
+            <hr><br><br>
+            <form action="/cadastro" method="POST">
+                <img class="imgcad" src="./imagem/icon.jpg" alt="">
+                <br>
+                <br>
+                Nome<br>
+                <input type="text" name="nome" class="campo" maxlength="40" required><br>
+              
+                Email<br>
+                <input type="email" name="email" class="campo" maxlength="50" required><br>
+              
+                Senha<br>
+                <input type="password" name="senha" class="campo" maxlength="20" required><br>
+              
+                CPF<br>
+                <input type="text" name="cpf" class="campo" minlength="11" maxlength="11" placeholder="999.999.999-99" required><br>
+                              
+                Data de Nascimento<br>
+                <input style="text-align: center" type="date" name="data" class="campo" required><br>
+              
+                Endereço<br>
+                <input type="text" name="endereco" class="campo" required><br>
+              
+                Telefone<br>
+                <input type="tel" name="telefone" class="campo" minlength="8" maxlength="15" required placeholder="(DDD) 0000-0000">
+              
+                Arma/Quadro/Serviço<hr><br>
+                <input type="radio" name="qualificacao" value="infantaria" required>Infantaria<br>
+                <br>
+                <input type="radio" name="qualificacao" value="cavalaria" required>Cavalaria<br>
+                <br>
+                <input type="radio" name="qualificacao" value="artilharia" required>Artilharia<br>
+                <br>
+                <input type="radio" name="qualificacao" value="engenharia" required>Engenharia<br>
+                <br>
+                <input type="radio" name="qualificacao" value="comunicacoes" required>Comunicações<br>
+                <br>
+                <input type="radio" name="qualificacao" value="matbel" required>Quadro de Material Bélico<br>
+                <br>
+                <input type="radio" name="qualificacao" value="intendencia" required>Serviço de Intendência<br>
+                              
+                <br>
+              
+                <input type="submit" value="Enviar" class="btn">
+                <input type="reset" value="Limpar" class="btn">
+                </form>
+    </div>
+</body>
+</html>
